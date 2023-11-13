@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +8,74 @@
     <link rel="stylesheet" href="style.css">
     <title>CELEBRITY PAGE</title>
 </head>
+
 <body>
 
-    <header class="text-center">
-        <h1>VIRAT KOHLI</h1>
-        <p>THE LEGEND OF INDIAN CRICKET TEAM</p>
+    <header class="text-center bg-light py-5">
+        <h1 class="display-4">VIRAT KOHLI</h1>
+        <p class="lead">THE LEGEND OF INDIAN CRICKET TEAM</p>
     </header>
 
-    <section class="container mt-7">
+    <section class="container mt-4">
         <h2>About</h2>
         <p>Virat Kohli is an Indian international cricketer and the former captain of the Indian national cricket team. He currently represents Royal Challengers Bangalore in the IPL and Delhi in domestic cricket. Kohli is widely regarded as one of the greatest batsmen in the history of the sport.</p>
     </section>
 
-    <section class="container mt-5">
+    <section class="container mt-4">
         <h2>Gallery</h2>
-        <img src="virat.jpg">
+        <img src="virat.jpg" class="img-fluid" alt="Virat Kohli">
     </section>
 
-    <section class="container mt-5">
+    <section class="container mt-4">
         <h2>Stats</h2>
-        <h3>Name - Virat Kohli</h3>
-        <Team>National Team - BCCI - Board Of Cricket Control Of India</Team>
-        <br>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Name - Virat Kohli</h3>
+                <p class="card-text"><strong>National Team</strong> - BCCI - Board Of Cricket Control Of India</p>
+                <p class="card-text"><strong>IPL Team</strong> - RCB - Royal Challengers Bangalore</p>
+                <p class="card-text"><strong>Wife</strong> - Anushka Sharma (Bollywood Actor)</p>
+                <p class="card-text"><strong>Daughter</strong> - Vamika Kohli - Female Daughter</p>
+            </div>
+        </div>
 
-        <Franchise Team>IPL Team - RCB - Royal Challengers Bangalore</Franchise>
-        <br>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h1 class="card-title">Cricket Records</h1>
 
-        <spouse>Wife - Anushka Sharma(Bollowood Actor)</spouse>
-        <br>
+                <div class="record">
+                    <h3>ODI</h3>
+                    <p>Matches Played - 290</p>
+                    <p>Runs Scored - 13677</p>
+                </div>
 
-        <child>Daughter - Vamika Kohli- Female Daughter</child>
-        <hr>
+                <hr>
 
-        <h1>Cricket Records</h1>
-        <h3 class="he4">ODI</h3>
-        <h3 class="he14">Matches Played  - 290</h3>
-        <h3 class="he24">Runs Scored - 13677</h3>
+                <div class="record">
+                    <h3>Test Match</h3>
+                    <p>Matches Played - 111</p>
+                    <p>Runs Scored - 8676</p>
+                </div>
 
-        <hr>
-        <h3 class="he1">Test Match</h3>
-        <h3 class="he11">Matches Played  - 111</h3>
-        <h3 class="he21">Runs Scored - 8676</h3>
-        <hr>
+                <hr>
 
-        <h3 class="he2">T20I</h3>
-        <h3 class="he12">Matches Played  - 115</h3>
-        <h3 class="he22">Runs Scored - 4008</h3>
-        <hr>
+                <div class="record">
+                    <h3>T20I</h3>
+                    <p>Matches Played - 115</p>
+                    <p>Runs Scored - 4008</p>
+                </div>
 
-        <h3 class="he3">IPL</h3>
-        <h3 class="he13">Matches Played  - 237</h3>
-        <h3 class="he23">Runs Scored - 7263</h3>
-        
+                <hr>
+
+                <div class="record">
+                    <h3>IPL</h3>
+                    <p>Matches Played - 237</p>
+                    <p>Runs Scored - 7263</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="text-center mt-5">
+    <footer class="text-center mt-4 py-3 bg-dark text-white">
         <p>&copy; 2023 Virat Kohli</p>
     </footer>
 
@@ -70,107 +84,62 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
-    body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202311/virat-kohli-123035591-16x9_0.jpg?VersionId=TlWee37n4iPyEw7sX.hTLtDnvPZaGPXH');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.9;
-    color: #333; /* Default text color */
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202311/virat-kohli-123035591-16x9_0.jpg?VersionId=TlWee37n4iPyEw7sX.hTLtDnvPZaGPXH');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.9;
+            color: #333;
+            /* Default text color */
+        }
 
-header {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-}
+        header {
+            padding: 50px 0;
+        }
 
-header h1, header p {
-    color: #007bff; /* Header text color */
-}
+        header h1,
+        header p {
+            color: #007bff;
+            /* Header text color */
+        }
 
-section.container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
+        section.container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
 
-section h2 {
-    color: #dc3545; /* Section heading color */
-}
+        section h2 {
+            color: #dc3545;
+            /* Section heading color */
+        }
 
-section p {
-    color: #555; /* Paragraph text color */
-}
+        section p {
+            color: #555;
+            /* Paragraph text color */
+        }
 
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
-}
+        footer {
+            padding: 20px 0;
+        }
 
-/* Add font styles for different sections */
-header, section, footer {
-    font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the actual font name */
-}
+        .record {
+            margin-bottom: 20px;
+        }
 
-/* Additional text styles for emphasis or decoration */
-h3 {
-    color: #28a745; /* Subheading color */ 
-}
+        /* Your existing styles remain unchanged */
 
-hr {
-    border-color: #007bff; /* Horizontal line color */
-}
-
-.he1{
-    color: #2865a7; /* Subheading color */
-}
-
-.he2{
-    color: #a7288e; /* Subheading color */
-}
-
-.he3{
-    color: #a79a28; /* Subheading color */
-}
-
-.he13{
-    color: #2898a7; /* Subheading color */
-}
-
-.he23{
-    color: #a72828; /* Subheading color */
-}
-
-.he11{
-    color: #28a75f; /* Subheading color */
-}
-
-.he21{
-    color: #f8e004; /* Subheading color */
-}
-
-.he22{
-    color:#333
-}
-
-.he12{
-    color: #9428a7; /* Subheading color */
-}
-
-.he4{
-    color: #31a728; /* Subheading color */
-}
-
-.he14{
-    color: #2894a7; /* Subheading color */
-}
-
-.he24{
-    color: #a72828; /* Subheading color */
-}
+        @media (max-width: 767px) {
+            /* Styles for devices with a maximum width of 767px (typically mobile devices) */
+            body {
+                background-attachment: scroll;
+                /* Remove fixed background attachment for better performance on mobile */
+            }
+        }
     </style>
 </body>
+
 </html>
